@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+    <title>Company home page</title>
+</head>
+
+<body>
+    <p>
+        Welcome to the company home page!
+    </p>
+
+    <a th:href="@{/leaders}">Leaders page</a>
+
+    <p>
+        <a th:href="@{/systems}">Systems page</a>
+    </p>
+
+    <form th:action="@{/logout}" method="POST">
+        <input type="submit" value="Logout" />
+    </form>
+</body>
+
+</html>
